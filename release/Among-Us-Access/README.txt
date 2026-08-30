@@ -448,9 +448,25 @@ Your status key (H) reports your role and its ability state. Beyond that:
 
   * ENGINEER - uses vents (see the vent navigation above).
 
-(Roles only appear if they are enabled for the lobby. In Freeplay you may
-not be assigned a special role - host a private lobby with the role turned
-on, see the settings menu below, to test these.)
+  * JUDGE - in a meeting you can overrule the vote and eject one player
+    outright. Be careful: if they were not the Impostor, YOU are ejected
+    instead. The ability is locked until you have done enough tasks, and
+    it is one use per meeting.
+    H reads its state - "overrule locked, 2 tasks to go", "overrule
+    ready", or "overrule already used this meeting" - and the same state
+    is repeated on the button itself. In a meeting each player now has TWO
+    entries: their normal vote button ("Dummy 2, green, alive") and their
+    overrule button, which always starts with the word "Overrule"
+    ("Overrule Dummy 2, green, overrule ready"). Listen for that word -
+    the two actions are not interchangeable. When you set an overrule the
+    mod confirms it ("Overrule set on Dummy 2, green").
+
+(Roles only appear if they are enabled for the lobby. To practise one on
+your own, start Freeplay: at the spawn point in Cafeteria there is a role
+console - Up/Down pick a category such as "Crewmate", Enter opens it, and
+inside are entries like "Be_Judge.exe" that hand you that role on the
+spot. Otherwise host a private lobby with the role turned on, see the
+settings menu below.)
 
 
 ====================================================================
